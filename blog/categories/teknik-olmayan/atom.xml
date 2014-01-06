@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ceisar]]></title>
-  <link href="http://ceisar.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: teknik-olmayan | Ceisar]]></title>
+  <link href="http://ceisar.github.io/blog/categories/teknik-olmayan/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
   <updated>2014-01-06T03:50:10+02:00</updated>
   <id>http://ceisar.github.io/</id>
@@ -14,33 +14,16 @@
 
   
   <entry>
-    
-    <title type="html"><![CDATA[Teknik Deneme]]></title>
-    <link href="http://ceisar.github.io/blog/2014/01/06/teknikdeneme/"/>
-    
-    <updated>2014-01-06T02:33:48+02:00</updated>
-    <id>http://ceisar.github.io/blog/2014/01/06/teknikdeneme</id>
-    
-    <content type="html"><![CDATA[<p>Deneme Teknik 123</p>
-]]></content>
-    
-  </entry>
-  
-  <entry>
-    
     <title type="html"><![CDATA[Deneme]]></title>
     <link href="http://ceisar.github.io/blog/2013/12/31/teknik/"/>
-    
     <updated>2013-12-31T19:00:09+02:00</updated>
     <id>http://ceisar.github.io/blog/2013/12/31/teknik</id>
-    
     <content type="html"><![CDATA[<p>Deneme 12</p>
 
 
 
 <p><a href="http://instagram.com/ceisar23?ref=badge" class="ig-b- ig-b-v-24"><img src="http://ceisar.github.io//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></p>
 ]]></content>
-    
   </entry>
   
 </feed>
