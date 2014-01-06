@@ -4,7 +4,7 @@
   <title><![CDATA[Ceisar]]></title>
   <link href="http://ceisar.github.io/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
-  <updated>2014-01-06T14:58:36+02:00</updated>
+  <updated>2014-01-06T15:02:23+02:00</updated>
   <id>http://ceisar.github.io/</id>
   <author>
     <name><![CDATA[İsmail ARSLAN]]></name>
@@ -27,6 +27,9 @@
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>dpkg -s libgtk-3-0 | grep '^Version'</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
 
 
 <p><strong>=> Ubuntu komut satırı kullananlar için önem arz eden Guake (F12 kullanımlı)</strong></p>
