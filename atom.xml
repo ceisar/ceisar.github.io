@@ -4,7 +4,7 @@
   <title><![CDATA[Ceisar's]]></title>
   <link href="http://ceisar.github.io/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
-  <updated>2014-01-06T15:39:05+02:00</updated>
+  <updated>2014-01-06T19:18:02+02:00</updated>
   <id>http://ceisar.github.io/</id>
   <author>
     <name><![CDATA[İsmail ARSLAN]]></name>
@@ -38,7 +38,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install guake</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>Kurulumdan sonra Alt + F2 &lsquo;de guake yazın. Çalıştıktan sonra F12 tuşu ile Guake&#8217;yi gökten zembille indirebilirsiniz.</em></p>
+<p><em>Kurulumdan sonra Alt + F2 &lsquo;de guake yazın. Çalıştıktan sonra F12 tuşu ile Guake&#8217;i gökten zembille indirebilirsiniz.</em></p>
 
 <p><strong>=> DNS ayarlarını değiştirmek için ;</strong></p>
 
@@ -75,14 +75,6 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>lspci | grep VGA</span></code></pre></td></tr></table></div></figure>
 
-
-<p><strong>=> (.txt) uzantılı dosya içeriğini görebilmek için;</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cat dosya_adi</span></code></pre></td></tr></table></div></figure>
-
-
-<p><em>&ldquo;less&rdquo; te aynı görevi görür fakat &ldquo;less&rdquo; sayfa sayfa görüntülerken, &ldquo;cat&rdquo; düz olarak gösterir.</em></p>
 
 <p><strong>=> Komut satırında &ldquo;Mysql&rdquo; kullanmak için ;</strong></p>
 
