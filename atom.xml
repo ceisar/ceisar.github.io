@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ceisar]]></title>
+  <title><![CDATA[------> CEISAR]]></title>
   <link href="http://ceisar.github.io/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
-  <updated>2014-01-06T01:47:49+02:00</updated>
+  <updated>2014-01-06T02:05:36+02:00</updated>
   <id>http://ceisar.github.io/</id>
   <author>
-    <name><![CDATA[Ceisar's]]></name>
+    <name><![CDATA[İsmail ARSLAN]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: 
-
-Sitemap: http://ceisar.github.io/sitemap.xml 
+Allow: /
