@@ -9,7 +9,8 @@
   <meta name="author" content="İsmail ARSLAN">
 
   
-  <meta name="description" content="&ldquo;Bismillah&hellip; Her Hayrın Başıdır&rdquo; diyelim ve başlayalım. 6 Ocak 2014 Pazartesi, Saat 4 buçuk. Say-Tas dedik. &ldquo;Daha yedi buçuk &hellip;">
+  <meta name="description" content="Ubuntu Kullananlar İçin Bir Kaç İşe Yarar Komut => Ubuntu&#8217;nun hangi versiyonda olduğunu öğrenmek için ; 1
+dpkg -s libgtk-3-0 | grep '^Version &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,128 @@
   <div id="main">
     <div id="content">
       
+
+
+    <article class="post">
+  <header>
+  
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/06/ubuntu-levazimlik/">Ubuntu Levazımlık</a></h1>
+      
+      
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-06T14:08:41+02:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Ubuntu Kullananlar İçin Bir Kaç İşe Yarar Komut</h2>
+
+<p><strong>=> Ubuntu&#8217;nun hangi versiyonda olduğunu öğrenmek için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dpkg -s libgtk-3-0 | grep '^Version'</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>=> Ubuntu komut satırı kullananlar için önem arz eden Guake (F12 kullanımlı)</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install guake</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Kurulumdan sonra Alt + F2 &lsquo;de guake yazın. Çalıştıktan sonra F12 tuşu ile Guake&#8217;yi gökten zembille indirebilirsiniz.</em></p>
+
+<p><strong>=> DNS ayarlarını değiştirmek için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/resolv.conf</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>şifrenizi girin ve ardından gelen sayfada</em></p>
+
+<blockquote><p>nameserver 127.0.1.1</p></blockquote>
+
+<p><em>yerine</em></p>
+
+<blockquote><p>nameserver 8.8.8.8</p>
+
+<p>nameserver 8.8.4.4</p></blockquote>
+
+<p><em>yazıp kaydedin ve çıkın. Google DNS adresini örnek olarak verdim. Siz kefinize göre değiştirin.</em></p>
+
+<p><strong>=> Ubuntu&#8217;da sürekli root olmak için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo su</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>=> Ubuntu&#8217;da sürücü isimlerini görüntülemek için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>lspci</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sadece ekran kartı sürücüsünün ismini görüntülemek için (örnek olarak ekran kartı) ;</em></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>lspci | grep VGA</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>=> (.txt) uzantılı dosya içeriğini görebilmek için;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat dosya_adi</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>&ldquo;less&rdquo; te aynı görevi görür fakat &ldquo;less&rdquo; sayfa sayfa görüntülerken, &ldquo;cat&rdquo; düz olarak gösterir.</em></p>
+
+<p><strong>=> Komut satırında &ldquo;Mysql&rdquo; kullanmak için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mysql -u root -p</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>=> Bilgisayarda ki bütün gizli dosyaları görüntülemek için ;</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find ~ - type f | ls -a | grep .*</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>veya</em></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find - ~ - type f .*</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>=> çalıştırılabilir dosyaları görüntüleyebilmek için gerekli komut ;</strong></p>
+
+<p><em>(Bu komut satırına <code>man find</code> yazdıktan sonra gelen sayfa içerisinde ve görüntülenen gizli dosyalar üzerinde denenmiştir.)</em></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>find - ~ executable</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="http://image.hotdog.hu/user/Lancher/profil/tumblr_m6l5wzAwfC1qc3izto1_500.gif" title="Sherlock Holmes" alt="" /></p>
+</div>
+  
+  
+
+</article>
 
 
     <article class="post">
