@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>anti teknik - Ceisar's</title>
+  <title>Sihirli Tuş 'SysRq' - Ceisar's</title>
   <meta name="author" content="İsmail ARSLAN">
 
   
-  <meta name="description" content="Anti Teknik Jan 6th, 2014 Jan 6th, 2014 Tweet Comments Please enable JavaScript to view the comments powered by facebook
-<div class="fb-comments" &hellip;">
+  <meta name="description" content="Ubuntu kullanırken bilgisayarımızda yavaşlama sıkıntısı yaşıyorsak eğer, bu tuş bize yardımcı oluyor. Klavyedeki yeri, sağ üst kısımlarda PrtSc ( &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ceisar.github.io/anti-teknik">
+  <link rel="canonical" href="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ceisar's" type="application/atom+xml">
@@ -71,32 +70,17 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Anti Teknik</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
   
-
-
-<time datetime="2014-01-06T13:32:00+02:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time></p>
-  </header>
+    
+      <h1 class="entry-title">Sihirli Tuş 'SysRq'</h1>
+    
   
-  
-
-  
-    <footer>
+    
       <p class="meta">
         
-        
 
 
 
@@ -108,13 +92,88 @@
   
 
 
-<time datetime="2014-01-06T13:32:00+02:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+<time datetime="2014-01-07T10:56:03+02:00" pubdate data-updated="true">Jan 7<span>th</span>, 2014</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Ubuntu kullanırken bilgisayarımızda yavaşlama sıkıntısı yaşıyorsak eğer, bu tuş bize yardımcı oluyor. Klavyedeki yeri, sağ üst kısımlarda PrtSc (Print Screen) ile aynı tuşu paylaşıyor. Öncelikle SysRq tuşumuzun etkin olup olmadığını şu şu komutla belirliyoruz ;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat /proc/sys/kernel/sysrq</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!--more-->
+
+
+<p>bu komutun çıktısı eğer <code>1</code> ise tuşumuz etkin demektir. Eğer değil ise, aşağıdaki komut ile, çıktımızı 1 olarak değiştiriyoruz.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo echo "1" &gt; /proc/sys/karnel/sysrq</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Şimdi de nasıl kullanacağımıza bakalım.</h4>
+
+<p><code>Alt + SysRq + komut_tuşu**</code></p>
+
+<p>Örnek olarak verirsek ;</p>
+
+<p><code>Alt + SysRq + r</code></p>
+
+<h4>Komut Tuşlarımız (**);</h4>
+
+<p><strong>r ==> Klavye X sunucusundan alır, çekirdek kontrolünde ham klavye kipine çevirir.</strong></p>
+
+<p><strong>e ==> &lsquo;Nezaketen&rsquo; bütün uygulamalara sonlandırma sinyali verir.</strong></p>
+
+<p><strong>i ==> Tüm uygulamalara &lsquo;Nezaketen Olmayan&rsquo; bir şekilde kapatma emri verir. Yani kill sinyali gönderir.</strong></p>
+
+<p><strong>s ==> Ön belleği diske aktarır.</strong></p>
+
+<p><strong>u ==> Tüm dosya sistemlerini salt-okunur olarak yeniden bağlar.</strong></p>
+
+<p><strong>b ==> Bilgisayarı kontrollü bir biçimde (resetlemekten çok daha güvenli olarak) yeniden başlatır.</strong></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ceisar.github.io/anti-teknik/index.html" data-via="Ceisar23" data-counturl="http://ceisar.github.io/anti-teknik/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">İsmail ARSLAN</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-07T10:56:03+02:00" pubdate data-updated="true">Jan 7<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/teknik/'>teknik</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq/" data-via="Ceisar23" data-counturl="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -124,9 +183,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2014/01/06/ubuntu-levazimlik/" title="Previous Post: Ubuntu Levazımlık">&laquo; Ubuntu Levazımlık</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 
@@ -137,7 +201,7 @@
       <noscript>Please enable JavaScript to view the comments powered by facebook</a></noscript>
 <div
   class="fb-comments"
-  data-href="http://ceisar.github.io/anti-teknik/index.html"
+  data-href="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq/"
   data-num-posts="2"
   data-width="470"
   data-colorscheme="light" ></div>

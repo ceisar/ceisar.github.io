@@ -4,7 +4,7 @@
   <title><![CDATA[Category: teknik | Ceisar's]]></title>
   <link href="http://ceisar.github.io/blog/categories/teknik/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
-  <updated>2014-01-07T10:48:01+02:00</updated>
+  <updated>2014-01-07T12:10:48+02:00</updated>
   <id>http://ceisar.github.io/</id>
   <author>
     <name><![CDATA[İsmail ARSLAN]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sihirli Tuş 'SysRq']]></title>
+    <link href="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq/"/>
+    <updated>2014-01-07T10:56:03+02:00</updated>
+    <id>http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq</id>
+    <content type="html"><![CDATA[<p>Ubuntu kullanırken bilgisayarımızda yavaşlama sıkıntısı yaşıyorsak eğer, bu tuş bize yardımcı oluyor. Klavyedeki yeri, sağ üst kısımlarda PrtSc (Print Screen) ile aynı tuşu paylaşıyor. Öncelikle SysRq tuşumuzun etkin olup olmadığını şu şu komutla belirliyoruz ;</p>
+
+<p><code>
+cat /proc/sys/kernel/sysrq
+</code></p>
+
+<!--more-->
+
+
+<p>bu komutun çıktısı eğer <code>1</code> ise tuşumuz etkin demektir. Eğer değil ise, aşağıdaki komut ile, çıktımızı 1 olarak değiştiriyoruz.</p>
+
+<p><code>
+sudo echo "1" &gt; /proc/sys/karnel/sysrq
+</code></p>
+
+<h4>Şimdi de nasıl kullanacağımıza bakalım.</h4>
+
+<p><code>Alt + SysRq + komut_tuşu**</code></p>
+
+<p>Örnek olarak verirsek ;</p>
+
+<p><code>Alt + SysRq + r</code></p>
+
+<h4>Komut Tuşlarımız (**);</h4>
+
+<p><strong>r ==> Klavye X sunucusundan alır, çekirdek kontrolünde ham klavye kipine çevirir.</strong></p>
+
+<p><strong>e ==> &lsquo;Nezaketen&rsquo; bütün uygulamalara sonlandırma sinyali verir.</strong></p>
+
+<p><strong>i ==> Tüm uygulamalara &lsquo;Nezaketen Olmayan&rsquo; bir şekilde kapatma emri verir. Yani kill sinyali gönderir.</strong></p>
+
+<p><strong>s ==> Ön belleği diske aktarır.</strong></p>
+
+<p><strong>u ==> Tüm dosya sistemlerini salt-okunur olarak yeniden bağlar.</strong></p>
+
+<p><strong>b ==> Bilgisayarı kontrollü bir biçimde (resetlemekten çok daha güvenli olarak) yeniden başlatır.</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu Levazımlık]]></title>
