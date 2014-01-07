@@ -4,7 +4,7 @@
   <title><![CDATA[Category: teknik | Ceisar's]]></title>
   <link href="http://ceisar.github.io/blog/categories/teknik/atom.xml" rel="self"/>
   <link href="http://ceisar.github.io/"/>
-  <updated>2014-01-07T12:10:48+02:00</updated>
+  <updated>2014-01-07T13:07:03+02:00</updated>
   <id>http://ceisar.github.io/</id>
   <author>
     <name><![CDATA[İsmail ARSLAN]]></name>
@@ -14,11 +14,91 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Ubuntu'ya 'Eclipse' Kurma]]></title>
+    <link href="http://ceisar.github.io/blog/2014/01/07/ubuntuya-eclipse-kurma/"/>
+    <updated>2014-01-07T12:15:16+02:00</updated>
+    <id>http://ceisar.github.io/blog/2014/01/07/ubuntuya-eclipse-kurma</id>
+    <content type="html"><![CDATA[<h2>Eclipse'i kurmadan önce JDK'yı  kurmak gerekiyor.</h2>
+
+<p><code>http://www.oracle.com/technetwork/java/javase/downloads/index.html</code>
+adresinden JDK / JRE &lsquo;nin en güncel verisyonunu indirin.
+İndirme işlemi bittikten sonra ;</p>
+
+<p><code>
+cd İndirilenler        //veya sizin indirme dizininiz (ingilizce kullananlar için *'Downloads')
+</code></p>
+
+<!--more-->
+
+
+<p>diyerek İndirilenler dizinine girin. Daha sonra indirmiş olduğumuz dosyayı çıkarmamız gerekiyor. Komut satırımıza aşağıdaki komutu yazıyoruz.</p>
+
+<p><code>
+sudo tar -zxvf dosya_adi(*) -C/opt/
+</code></p>
+
+<p>(*)dosya_adi = indirdiğin dosya versiyonuna göre değiştiği için ;</p>
+
+<p><code>jdk-7u4-linux-i586.tar.gz</code> gibi bir şey olabilir.</p>
+
+<p>Yani örnek olarak komut satırına yazmanız gereken şey ;</p>
+
+<p><code>
+sudo tar -zxvf jdk-7u4-linux-i586.tar.gz -C/opt/
+</code></p>
+
+<p>şeklinde olmalı. Bunu yapınca dosyalar çıkarılırken aynı zamanda kendiliğinden bilgisayarımıza kurulmuş ta oldu. Kullanabilmek için ise PATH ayarlarının yapılması gerekiyor.</p>
+
+<p>Bilgisayarımızı kapatıp açıyoruz ve daha sonra komut satırımıza ;</p>
+
+<p><code>
+java -version
+</code></p>
+
+<p>yazarak javamızınn hangi versiyonda olduğunu öğreniyoruz. Aynı zamanda bu komu bize yüklemenin doğru olduğunu/yapıldığını gösteriyor. Daha sonra komut satırına;</p>
+
+<p><code>
+sudo gedit /etc/enviroment
+</code></p>
+
+<p>yazıyoruz ve gelen dosyaya, <code>/opt/versiyonumuzun_adi(*)/bin</code> yazıyoruz. (*)versiyonumzun_adi kısmına kendi versiyonumuzu yazıyoruz. Yani örnek olarak <code>/opt/jdk1.7.0_04/bin</code> şeklinde yazmamız gerekiyor. Daha sonra bu dosyayı kaydedip çıkıyoruz.</p>
+
+<p>Son olarak java'yı browserımızda kullanabilmek için, aşağıda ki kodu çalıştırarak pulgini browserımıza tanıtmış oluyoruz. (Chrome veya chromium için de geçerli mi bilmiyorum.)</p>
+
+<p><code>
+sudo ln -s /opt/versiyonumuzun_adi(*)/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/pulgins/
+</code></p>
+
+<h2>Şimdi ise Eclipse kurulum evresine geçiyoruz.</h2>
+
+<p><code>eclipse.org/downloads/</code> adresinden gerekli dosyayı (uzantısı .tar.gz olsun) indirin.</p>
+
+<p><code>
+cd İndirilenler
+</code></p>
+
+<p>Daha sonra yine indirdiğimiz dosyanın adını alıyoruz ve komut satırına ;</p>
+
+<p><code>
+sudo tar -zxvf dosya_adi(*) -C/opt/
+</code></p>
+
+<p>yazarak dosyayı çıkarıp aynı anda kurmuş oluyoruz.</p>
+
+<p>Kurma işlemimiz tamamlandı.</p>
+
+<p>Arama çubuğuna eclipse yazarak programı çalıştırabilirsin.</p>
+
+<p>TEŞEKKÜRLER&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Sihirli Tuş 'SysRq']]></title>
     <link href="http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq/"/>
     <updated>2014-01-07T10:56:03+02:00</updated>
     <id>http://ceisar.github.io/blog/2014/01/07/sihirli-tus-sysrq</id>
-    <content type="html"><![CDATA[<p>Ubuntu kullanırken bilgisayarımızda yavaşlama sıkıntısı yaşıyorsak eğer, bu tuş bize yardımcı oluyor. Klavyedeki yeri, sağ üst kısımlarda PrtSc (Print Screen) ile aynı tuşu paylaşıyor. Öncelikle SysRq tuşumuzun etkin olup olmadığını şu şu komutla belirliyoruz ;</p>
+    <content type="html"><![CDATA[<p>Ubuntu kullanırken bilgisayarımızda yavaşlama sıkıntısı yaşıyorsak eğer, bu tuş bize yardımcı oluyor. (Reset tuşuna bi son verin artık.) Klavyedeki yeri, sağ üst kısımlarda PrtSc (Print Screen) ile aynı tuşu paylaşıyor. Öncelikle SysRq tuşumuzun etkin olup olmadığını şu şu komutla belirliyoruz ;</p>
 
 <p><code>
 cat /proc/sys/kernel/sysrq
